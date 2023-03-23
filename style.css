@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__hero {
+    padding: 9.6rem 0 0 0;
+}
+
+.hero__content {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero__dados-destaque {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3.2rem;
+    gap: 1.8rem;
+}
+
+.hero__foto-destaque {
+    position: relative;
+    grid-area: 1;
+    margin-right: 9.2rem;
+}
+
+.form-contato {
+    padding: 3.2rem;
+}
+
+.hero__foto-destaque img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* arredonda a imagem para formar o círculo */
+    position: relative;
+    z-index: 1;
+}
+
+.hero__foto-destaque::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f05d67; /* cor de fundo do círculo */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.subtitulo {
+    color: #f05d67;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.6px;
+    /* letter-spacing: -0.8px; */
+}
+
+h1 {
+    font-size: 4.2rem;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+h1 span {
+    font-size: 2.2rem;
+}
+
+.hero__contato-item {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.consulta-online {
+    margin-top: 3.2rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.hero-botao {
+    margin-top: 2rem;
+}
+.btn {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #477766;
+    color: #fff;
+}
+
+.btn--full:hover {
+    background-color: #45a049;
+}
+
+.form-contato {
+    margin-left: 3.2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+    border-radius: 6px;
+    box-shadow: 0 3.4rem 4.8rem rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #477766;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*  */
+.section-especialidades {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.grid {
+    display: grid;
+    gap: 3.2rem;
+}
+.grid-3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-2-cols {
+    grid-template-columns: 1fr 1fr;
+}
+
+.espec-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 3.2rem;
+    text-align: center;
+    /* background-color: #f05d67; */
+    /* color: #fff; */
+    /* color: #5c686f; */
+    /* border: 0.4px solid #f05d676b; */
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
+    line-height: 1.4;
+    /* box-shadow: inset 0 0 10px rgb(255, 255, 255); */
+}
+
+ion-icon {
+    color: #dc565f;
+}
+
+.espec-ion-icon {
+    font-weight: 4.2rem;
+}
+ion-icon {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+}
+
+.espec-descricao {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.espec-link {
+    margin-top: 2.4rem;
+}
+
+.section-formacao {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+.titulo-formacao {
+    padding: 3.2rem;
+    text-align: center;
+}
+
+.titulo-formacao p {
+    text-transform: uppercase;
+    color: #477766;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.formacao-card {
+    padding: 3.2rem;
+    display: flex;
+}
+
+.formacao-descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao-icon {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    color: #45a049;
+}
+
+.formacao-descricao p {
+    line-height: 1.4;
+    margin-top: 2.4rem;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    /* font-weight: 200; */
+}

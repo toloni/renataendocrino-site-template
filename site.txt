@@ -1,0 +1,66 @@
+Header
+    Logo
+    Menu
+
+Body
+    main
+        Hero
+            dados_destaque
+                P Endocrinologista (pequeno)
+                H1 Drª Renata Gonçalves Campos (destaque)
+                p CRM 135847-SP &#124; RQE 051322
+                icon celular (11) 9 9431-3977
+                email 
+                endereço
+
+                botao
+                    agendar consulta
+        
+            Foto
+
+        Especialidades
+        Cards
+            card
+                icone 
+                Emagrecimento e Obesidade
+                A obesidade e o sobrepeso são uma epidemia global. É importante lembrar que a obesidade é uma doença crônica, que precisa de tratamento, com medidas comportamentais e muitas vezes com medicamentos
+            
+                Diabetes
+                O diabetes é uma das doenças cada vez mais frequentes no mundo. Alterações na glicemia como aumento ou quedas no valor da glicose também podem ocorrer e necessitam de atenção e orientação. 
+
+                Tireoide
+                A tireoide é uma das glândulas mais importantes do nosso corpo e produz o hormônio tireoidiano, que regula o metabolismo e diversas funções do organismo. 
+
+                Hormônios Femininos
+                A endocrinologia auxilia, em complemento com a ginecologia, no tratamento da Síndrome dos ovários policísticos, Falência dos ovários precoce, menopausa e climatério. 
+
+                Metabolismo do Osso
+                A saúde dos nossos ossos também depende dos nossos hormônios, além do estilo de vida. Distúrbios hormonais, do cálcio, da vitamina D podem prejudicar a massa óssea, causando osteoporose.
+
+                Hipófise
+                A hipófise é nossa glândula mestra, fica bem no centro da cabeça e controla todos os nossos hormônios.
+
+                Glândula Adrenal
+                A glândula suprarrenal fica em cima dos rins, e produz hormônios importantíssimos como o hormônio do estresse cortisol, hormônios androgênicos, adrenalina, noradrenalina, aldosterona.
+
+                Hormônios Masculinos
+                A produção dos hormônios masculinos como a testosterona principalmente nos homens é essencial para a saúde masculina, tanto a falta quanto o excesso podem causar sérios prejuízos à saúde.
+
+                Deficiências Nutricionais
+                 Nosso corpo é todo interligado e a visão sistêmica do Endocrinologista ajuda a conectar a saúde nutricional com nossos hormônios e metabolismo.
+
+        ---
+        Formacao (fundo branco)
+
+
+
+        Teleconsultas (fundo cinza)
+        Para quem precisa de praticidade, mora longe, não tem tempo para ir ao consultório ou por questões de saúde, as consultas on-line são uma boa opção. A duração da consulta é em média de 1h, sendo orientado ao paciente previamente enviar todos os exames já realizados disponíveis via e-mail para facilitar o processo. Durante a consulta fazemos uma boa avaliação do quadro do paciente, damos orientações e prescrevemos medicamentos e exames via plataforma digital. Caso necessário é realizado um retorno em até 30 dias, que tem duração média de 30 min.
+        Foto
+
+
+        YouTube (fundo branco)
+            videos
+
+        
+        contato

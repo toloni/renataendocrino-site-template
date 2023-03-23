@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    font-size: 1.8rem;
+}
+h1 {
+    color: #000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    z-index: 999;
+}
+
+.logo {
+    height: 6.4rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    padding: 9.6rem 0 0 0;
+    margin-bottom: 4.8rem;
+}
+
+ion-icon {
+    font-size: 64px;
+    align-self: center;
+}
+
+/* font size */
+.font-size-lg {
+    font-size: 3.6rem;
+}
+.font-size-md {
+    font-size: 2.4rem;
+}
+
+/* colors */
+.color--pink {
+    color: #f05d67;
+}
+.color--green {
+    color: #477766;
+}
+
+/* containers */
+.container {
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.container--sm {
+    max-width: 120rem;
+}
+.container--lg {
+    max-width: 130rem;
+}
+
+/* grids */
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 3.2rem;
+}
+.grid-gap--sm {
+    gap: 3.2rem;
+}
+.grid-gap--md {
+    gap: 6.4rem;
+}
+.grid-gap--lg {
+    gap: 9.8rem;
+}
+.grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* flex */
+.flex--sm {
+    display: flex;
+    gap: 1.6rem;
+}
+.flex--p {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+/* margin */
+.margin-top--sm {
+    margin-top: 1.2rem;
+}
+.margin-top--md {
+    margin-top: 3.2rem;
+}
+.margin-top--lg {
+    margin-top: 6.4rem;
+}
+.margin-bt--md {
+    margin-bottom: 3.2rem;
+}
+.margin-bt--lg {
+    margin-bottom: 6.4rem;
+}
+.margin-bt--elg {
+    margin-bottom: 12.8rem;
+}
+/* padding */
+.padding--md {
+    padding: 3.2rem;
+}
+.padding--lg {
+    padding: 6.4rem;
+}
+.padding--reset {
+    padding: 0;
+}
+
+/* backgrouds */
+.bg-color--grey {
+    background-image: linear-gradient(to right bottom, #fff, #d7dacf);
+}
+
+/* hero */
+.hero-imagem {
+    position: relative;
+    grid-area: 1;
+}
+.hero-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(2rem 2rem 10rem #fff);
+    filter: drop-shadow(2rem 2rem 10rem #fff);
+    position: relative;
+    z-index: 1;
+}
+.hero-imagem::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #f05d67;
+}
+.subtitulo {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 2.4rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+.btn:link,
+.btn:visited {
+    background-color: #477766;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #81d2b5;
+}
+
+.card-spec {
+    text-align: center;
+    border-radius: 11px;
+    /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.06); */
+    line-height: 1.2;
+    align-self: stretch;
+    flex-flow: column nowrap;
+    transition: all 0.4s;
+}
+.card-spec:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card-spec p {
+    letter-spacing: 1px;
+    /* font-size: 1.6rem; */
+}
+.card-spec a {
+    text-decoration: none;
+    margin-top: auto;
+}
+.card-spec a:link,
+.card-spec a:visited {
+    color: #f05d67;
+}
+.card-spec a:hover {
+    color: #962c4c;
+}
+
+/* formacao */
+.subtitulo-formacao {
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+/* TOP RITGHT BOTTOM LEFT */
+.formacao-icon {
+    padding: 0 1.8rem 0 3.2rem;
+}
+.line-height-sm {
+    line-height: 1.4;
+}
+
+/* teleocnsulta */
+.teleconsulta-descricao {
+    align-self: self-start;
+}
+.teleconsulta-descricao h2 {
+    letter-spacing: 0.4rem;
+    font-weight: 100;
+    color: #000;
+}
+.teleconsulta-descricao h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+}
+.teleconsulta-descricao-texto {
+    color: #000;
+}
+.teleconsulta-container {
+    align-self: baseline;
+}
+.teleconsulta-imagem img {
+    width: 100%;
+    margin-bottom: -3px;
+    -webkit-filter: drop-shadow(2rem 2rem 10rem #fff);
+    filter: drop-shadow(2rem 2rem 10rem #fff);
+}
+.teleconsulta-descricao-texto {
+    font-weight: 300;
+    /* font-size: 1.6rem; */
+    line-height: 1.6;
+}
+
+.link-agendar-teleconsulta a:link,
+.link-agendar-teleconsulta a:visited {
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    color: #477766;
+}
+.link-agendar-teleconsulta a:hover {
+    font-weight: 600;
+    color: #f05d67;
+}
+.link-agendar-teleconsulta {
+    align-self: baseline;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #477766;
+}
+.link-agendar-teleconsulta:hover {
+    border-bottom: 0;
+}
+
+/* videos */
+.video-card {
+    line-height: 1.4;
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+.video-conainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.video-conainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.video-conainer iframe:hover {
+    transform: scale(1.2);
+}
+/* TOP RITGHT BOTTOM LEFT */
+.video-descricao {
+    padding: 3.2rem 6.4rem 6.4rem 6.4rem;
+}
+
+.video-descricao h2 {
+    color: #f05d67;
+    font-weight: 300;
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.video-descricao p {
+    /* letter-spacing: 0.6px;
+    font-weight: 300; */
+    padding-bottom: 3.2rem;
+    /* font-size: 1.8rem; */
+}
+
+/* contato */
+.contato-dados {
+    text-align: center;
+    gap: 6.2rem;
+}
+.contato-dados h3 {
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #f05d67;
+}
+.contato-mapa {
+    align-self: stretch;
+}
+.contato-loc {
+    line-height: 1.4;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-left: 3.2rem;
+    /* max-width: 500px; */
+    /* margin: 0 auto; */
+}
+
+label {
+    color: #f05d67;
+    font-weight: 500;
+    /* font-weight: bold; */
+    /* margin-bottom: 1.8rem; */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #f9e6e2;
+    /* background-color: #f2f2f2; */
+    padding: 0.8rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.6rem;
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #fff;
+    color: #f05d67;
+    border: none;
+    border: 1px solid #f05d67;
+    border-radius: 4px;
+    padding: 1.2rem 3.6rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    align-self: baseline;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: transform 0.6s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f05d67;
+    color: #fff;
+}
+
+/**************************/
+/* FOOTER                 */
+/**************************/
+.footer {
+    padding: 4.8rem;
+    text-align: center;
+}
+
+.footer .logo {
+    height: 4.8rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #444;
+}
+
+.redes-footer-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+
+.redes-footer-icon:hover,
+.redes-footer-icon:active {
+    color: #c9675e;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    margin-top: 4.8rem;
+}
+.container-contato {
+    grid-template-columns: 2fr 3fr 2fr;
+}

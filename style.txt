@@ -1,0 +1,49 @@
+
+TOP RITGHT BOTTOM LEFT
+
+.section__hero {
+    padding: 9.6rem 0 0 0;
+}
+
+.section-especialidades {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-formacao {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+==
+.section {
+    padding: 9.6rem 0 0 0;
+}
+--
+--
+container
+.hero__content {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+==
+.container {
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.container-sm {
+    max-width: 120rem;
+}
+.container-lg {
+    max-width: 130rem;
+}

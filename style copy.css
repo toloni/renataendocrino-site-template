@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: CentraNube, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        arial, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #2a363b;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__hero {
+    padding: 9.6rem 0 0 0;
+}
+
+.hero__content {
+    /* max-width: 144rem; */
+    margin: 0 auto;
+    padding-left: 6.2rem;
+    display: grid;
+    grid: auto-flow dense / 40% 60% 1fr;
+    align-items: center;
+}
+.hero__dados-destaque {
+    background-color: #fff;
+}
+
+.hero__foto-destaque {
+    border-radius: 33% 0 0 0;
+    /* background-color: #e6e8e3; */
+    background-size: cover;
+    background-position: center;
+    background-color: #e6e8e3;
+    /* background-image: linear-gradient(to right bottom, #fff, #bec3bc); */
+    overflow: hidden;
+}
+
+.hero__content img {
+    filter: drop-shadow(2rem 2rem 10rem #65727a);
+    margin-left: 3.2rem;
+    margin-bottom: -4px;
+    width: 70%;
+    /* transform: skew(20deg); */
+}
+
+/* .hero__content { */
+/* max-width: 130rem; */
+/* margin: 0 auto; */
+/* padding: 0 3.2rem; */
+/* display: flex; */
+/* align-items: right; */
+/* align-items: center; */
+/* position: relative; */
+/* background-color: beige; */
+/* } */
+/* .hero__foto-destaque { */
+/* background-color: #8f9a9c; */
+/* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15); */
+/* border-radius: 50% 0 0 50%; */
+/* height: 300px; */
+/* background-position: 0% 50%; */
+
+/* background-image: linear-gradient(to right bottom, #d7dacf, #8f9a9c); */
+/* overflow: hidden;
+    float: right;  */
+
+/* position: fixed; ou absolute, dependendo do caso */
+/* ou a largura desejada */
+/* background-color: red; ou a cor desejada */
+/* right: 0; */
+/* } */
+/* .hero__foto-destaque img {
+    width: 500px;
+} */ ;
