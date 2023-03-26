@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="stylesheet.css" rel="stylesheet" />
+        <link href="queries.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -22,7 +23,7 @@
         <title>Document</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <a href="/">
                 <img
                     src="logo-renata.svg"
@@ -30,6 +31,39 @@
                     alt="logo dra renata campos"
                 />
             </a>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a class="main-nav-link" href="#especialidade"
+                            >especialidades</a
+                        >
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="#formacao">formação</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="#teleconsulta"
+                            >teleconsulta</a
+                        >
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="#youtube">youTube</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="#contato">contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-mobile-nav">
+                <ion-icon
+                    class="icon-mobile-nav"
+                    name="menu-outline"
+                ></ion-icon>
+                <ion-icon
+                    class="icon-mobile-nav"
+                    name="close-outline"
+                ></ion-icon>
+            </button>
         </header>
         <main>
             <section id="hero">
@@ -42,7 +76,7 @@
                             alt="Médica Endocrinologista - Dra Renata Gonçalves Campos"
                         />
                     </div>
-                    <div class="flex--sm flex-column">
+                    <div class="flex--sm flex-column hero-info">
                         <p class="subtitulo color--pink">
                             ENDOCRINOLOGIA &nbsp; &amp; &nbsp; METABOLOGIA
                         </p>
@@ -95,7 +129,7 @@
                             ></ion-icon>
                             <p>São Paulo - SP</p>
                         </div>
-                        <p class="margin-top--lg">
+                        <p class="margin-top--sm">
                             Consultas Online ou Presencial
                         </p>
 
@@ -369,7 +403,7 @@
                                 de 30 min.
                             </p>
                         </div>
-                        <div class="margin-top--lg link-agendar-teleconsulta">
+                        <div class="link-agendar-teleconsulta">
                             <a class="font-size-md" href=""
                                 >agendar teleconsulta</a
                             >
@@ -532,7 +566,22 @@
                         <input type="text" id="name" name="name" required />
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                            required
+                        />
+
+                        <label for="phone">Telefone:</label>
+                        <input
+                            type="phone"
+                            id="phone"
+                            name="phone"
+                            pattern="\(\d{2}\) \d{5}-\d{4}"
+                            oninput="formatPhone(this)"
+                        />
 
                         <label for="message">Mensage:</label>
                         <textarea
@@ -545,6 +594,43 @@
 
                         <button type="submit">Enviar</button>
                     </form>
+                    <script>
+                        function formatPhone(input) {
+                            // remove all non-numeric characters from input value
+                            var numericValue = input.value.replace(/\D/g, "");
+
+                            var pattern =
+                                numericValue.length > 10
+                                    ? /(\d{2})(\d{5})(\d{4})/
+                                    : /(\d{2})(\d{4})(\d{4})/;
+
+                            // format phone number using regular expression
+                            var formattedValue = numericValue.replace(
+                                pattern,
+                                "($1) $2-$3"
+                            );
+
+                            // update input value
+                            input.value = formattedValue;
+                        }
+
+                        // MENU MOBILE
+                        const btnNavEl =
+                            document.querySelector(".btn-mobile-nav");
+                        const headerEl = document.querySelector(".header");
+
+                        btnNavEl.addEventListener("click", function () {
+                            headerEl.classList.toggle("nav-open");
+                        });
+
+                        const allMainNavLink =
+                            document.querySelectorAll(".main-nav-link");
+                        allMainNavLink.forEach(function (el) {
+                            el.addEventListener("click", function () {
+                                headerEl.classList.toggle("nav-open");
+                            });
+                        });
+                    </script>
                 </div>
             </section>
         </main>
